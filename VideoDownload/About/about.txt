@@ -1,0 +1,32 @@
+1. Mô tả
+
+- Đây là 1 trình download video YouTube, Facebook, tiktok dựa theo url được cạo từ chuỗi HTML trang web
+- Video được download dưới nền trong tiến trình download
+- Sử dụng Picture in Picture (Phát video ngoài nền)
+
+
+2. Bao gồm
+- Màn Home có 1 webview được ẩn để load trang web và để lấy dữ liệu chuỗi HTML
+- Màn Download với danh sách video đã và đang download
+- Video đã download được lưu trong tệp document
+- Ảnh đại diện video lúc bắt đầu download sẽ được lấy từ api, khi dơn xong sẽ lấy ảnh snapshot của chính video đó
+
+
+3. Tiến trình
+
+- Hoàn thành
+	+ Hoàn thành việc lấy chuỗi html
+	+ Hoàn thành cho việc download video youtube
+
+- Xem xét
+	+ Download dưới nền hoàn thành (cần test thêm)
+	+ Hoàn thành download 1 số dạng video Facebook (vẫn lỗi ở 1 vài video)
+	+ Xem Xét và làm thêm download 1 vài video
+	+ Màn hình chờ, animation , app icon
+
+- Lỗi
+	+ Picture in Picture: Bị lỗi khi ấn zoom to trở lại (auto dismiss avplayer)
+	+ Lỗi inner shadow textfield
+	+ Lỗi khi download video tiktok (lấy được đường dẫn nhưng không play đc ở 
+	  avplayer và không tiến hành truy cập video để down được 
+	  (Nghi do lỗi cản trở truy cập mạng)

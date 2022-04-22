@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Raleway-Bold.ttf">
+            <string>Raleway-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="189" id="KGk-i7-Jjw" customClass="ForYouCell" customModule="Traveldy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="376" height="189"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="376" height="189"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ees-Mw-9Ms">
+                        <rect key="frame" x="0.0" y="0.0" width="376" height="164"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gHq-Ez-wLf">
+                                <rect key="frame" x="0.0" y="0.0" width="376" height="30"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="For you" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kcu-yF-fAi">
+                                        <rect key="frame" x="20" y="0.0" width="61.5" height="30"/>
+                                        <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="18"/>
+                                        <color key="textColor" red="0.066666666669999999" green="0.2156862745" blue="0.29411764709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="See all &gt;" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x0w-VW-X6y">
+                                        <rect key="frame" x="309.5" y="0.0" width="46.5" height="30"/>
+                                        <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="12"/>
+                                        <color key="textColor" red="0.55686274509803924" green="0.57647058823529407" blue="0.58823529411764708" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="x0w-VW-X6y" secondAttribute="bottom" id="0fT-0X-0JZ"/>
+                                    <constraint firstAttribute="bottom" secondItem="Kcu-yF-fAi" secondAttribute="bottom" id="1jG-SB-Wtk"/>
+                                    <constraint firstAttribute="height" constant="30" id="2OD-SA-0Bo"/>
+                                    <constraint firstAttribute="trailing" secondItem="x0w-VW-X6y" secondAttribute="trailing" constant="20" id="G3T-uZ-kZM"/>
+                                    <constraint firstItem="Kcu-yF-fAi" firstAttribute="top" secondItem="gHq-Ez-wLf" secondAttribute="top" id="Xce-a5-08O"/>
+                                    <constraint firstItem="x0w-VW-X6y" firstAttribute="top" secondItem="gHq-Ez-wLf" secondAttribute="top" id="XtP-sv-yhb"/>
+                                    <constraint firstItem="Kcu-yF-fAi" firstAttribute="leading" secondItem="gHq-Ez-wLf" secondAttribute="leading" constant="20" id="mhv-F1-SBJ"/>
+                                </constraints>
+                            </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="mFm-KH-gw4">
+                                <rect key="frame" x="0.0" y="40" width="376" height="124"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="dzw-w2-RAj">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="mFm-KH-gw4" firstAttribute="top" secondItem="gHq-Ez-wLf" secondAttribute="bottom" constant="10" id="09U-GV-Pkt"/>
+                            <constraint firstItem="mFm-KH-gw4" firstAttribute="leading" secondItem="ees-Mw-9Ms" secondAttribute="leading" id="CbJ-Tz-UgH"/>
+                            <constraint firstItem="gHq-Ez-wLf" firstAttribute="leading" secondItem="ees-Mw-9Ms" secondAttribute="leading" id="Dab-ai-y2D"/>
+                            <constraint firstAttribute="bottom" secondItem="mFm-KH-gw4" secondAttribute="bottom" id="OMl-XW-vw7"/>
+                            <constraint firstAttribute="trailing" secondItem="gHq-Ez-wLf" secondAttribute="trailing" id="kGY-pA-OQj"/>
+                            <constraint firstItem="gHq-Ez-wLf" firstAttribute="top" secondItem="ees-Mw-9Ms" secondAttribute="top" id="ks5-gl-zrL"/>
+                            <constraint firstAttribute="trailing" secondItem="mFm-KH-gw4" secondAttribute="trailing" id="wh3-Bg-Sk0"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="ees-Mw-9Ms" secondAttribute="bottom" constant="25" id="KKd-1d-Lm4"/>
+                    <constraint firstItem="ees-Mw-9Ms" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="VkI-uS-gSv"/>
+                    <constraint firstAttribute="trailing" secondItem="ees-Mw-9Ms" secondAttribute="trailing" id="oZU-OS-9kH"/>
+                    <constraint firstItem="ees-Mw-9Ms" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="r6v-Lh-bmj"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="collectionView" destination="mFm-KH-gw4" id="hz1-mL-pEx"/>
+                <outlet property="lbForYou" destination="Kcu-yF-fAi" id="GHX-p1-mif"/>
+                <outlet property="lbSeeAll" destination="x0w-VW-X6y" id="SMc-Ch-kMR"/>
+                <outlet property="viewCell" destination="ees-Mw-9Ms" id="YfZ-g8-Qn1"/>
+                <outlet property="viewContent" destination="gHq-Ez-wLf" id="emF-Cy-Js9"/>
+            </connections>
+            <point key="canvasLocation" x="130.43478260869566" y="142.96875"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

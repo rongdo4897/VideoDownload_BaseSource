@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Raleway-Medium.ttf">
+            <string>Raleway-Medium</string>
+        </array>
+        <array key="Raleway-Regular.ttf">
+            <string>Raleway-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="DayCell" customModule="Traveldy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="105" height="71"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="105" height="71"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pmE-gm-0Fx">
+                        <rect key="frame" x="0.0" y="0.0" width="105" height="71"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PI6-pK-oOe">
+                                <rect key="frame" x="10" y="10" width="85" height="51"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Day 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5oy-NW-5n5">
+                                        <rect key="frame" x="20.5" y="6.5" width="44.5" height="21"/>
+                                        <fontDescription key="fontDescription" name="Raleway-Medium" family="Raleway" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="April 4, 2020" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gdf-L3-k9o">
+                                        <rect key="frame" x="14" y="31.5" width="57" height="12"/>
+                                        <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="10"/>
+                                        <color key="textColor" red="0.55686274509803924" green="0.57647058823529407" blue="0.58823529411764708" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="94x-YM-3Zd" userLabel="centerView">
+                                        <rect key="frame" x="1.5" y="25.5" width="82" height="0.0"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="82" id="4br-k3-iXS"/>
+                                            <constraint firstAttribute="height" id="vUD-PN-GiW"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="Gdf-L3-k9o" firstAttribute="top" secondItem="94x-YM-3Zd" secondAttribute="bottom" constant="6" id="7lu-7Q-Lfl"/>
+                                    <constraint firstItem="94x-YM-3Zd" firstAttribute="top" secondItem="5oy-NW-5n5" secondAttribute="bottom" constant="-2" id="Jbe-Jf-BXa"/>
+                                    <constraint firstItem="5oy-NW-5n5" firstAttribute="centerX" secondItem="PI6-pK-oOe" secondAttribute="centerX" id="Nv2-xd-ETR"/>
+                                    <constraint firstItem="94x-YM-3Zd" firstAttribute="centerX" secondItem="PI6-pK-oOe" secondAttribute="centerX" id="ZXV-hs-qYi"/>
+                                    <constraint firstItem="94x-YM-3Zd" firstAttribute="centerY" secondItem="PI6-pK-oOe" secondAttribute="centerY" id="bdP-jw-IqE"/>
+                                    <constraint firstItem="Gdf-L3-k9o" firstAttribute="centerX" secondItem="PI6-pK-oOe" secondAttribute="centerX" id="gBu-KC-WFV"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="PI6-pK-oOe" firstAttribute="leading" secondItem="pmE-gm-0Fx" secondAttribute="leading" constant="10" id="3WI-AB-9j5"/>
+                            <constraint firstItem="PI6-pK-oOe" firstAttribute="top" secondItem="pmE-gm-0Fx" secondAttribute="top" constant="10" id="8l0-Jf-FJf"/>
+                            <constraint firstAttribute="bottom" secondItem="PI6-pK-oOe" secondAttribute="bottom" constant="10" id="aPd-np-FWq"/>
+                            <constraint firstAttribute="trailing" secondItem="PI6-pK-oOe" secondAttribute="trailing" constant="10" id="dBh-GW-aHv"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="leading" secondItem="pmE-gm-0Fx" secondAttribute="leading" id="8X1-dr-6Ue"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="pmE-gm-0Fx" secondAttribute="trailing" id="BSv-0V-HVq"/>
+                <constraint firstAttribute="top" secondItem="pmE-gm-0Fx" secondAttribute="top" id="UcD-cZ-GhY"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="bottom" secondItem="pmE-gm-0Fx" secondAttribute="bottom" id="rEy-25-uCC"/>
+            </constraints>
+            <size key="customSize" width="212" height="164"/>
+            <connections>
+                <outlet property="backView" destination="PI6-pK-oOe" id="AY7-If-NJi"/>
+                <outlet property="lbDate" destination="Gdf-L3-k9o" id="yQu-EQ-EEU"/>
+                <outlet property="lbDayTitle" destination="5oy-NW-5n5" id="2xv-D7-cPG"/>
+            </connections>
+            <point key="canvasLocation" x="249.27536231884059" y="145.98214285714286"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

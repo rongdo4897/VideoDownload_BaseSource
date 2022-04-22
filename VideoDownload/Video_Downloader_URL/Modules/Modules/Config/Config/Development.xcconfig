@@ -1,0 +1,16 @@
+//
+//  Development.xcconfig
+//  Traveldy
+//
+//  Created by Huong Nguyen on 14/04/2021.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+// Server URL
+ROOT_URL = http:/$()/35.240.153.89
+
+// App Settings
+APP_NAME = Traveldy (dev)
+APP_BUNDLE_ID = mespi.traveldy

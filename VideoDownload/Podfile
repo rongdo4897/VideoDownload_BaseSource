@@ -1,0 +1,20 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'Video_Downloader_URL' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+pod 'Alamofire', '~> 4.5'
+pod 'HTMLKit', '~> 4.2'
+pod 'WKWebViewWithURLProtocol'
+pod 'SwiftyJSON'
+pod 'IQKeyboardManagerSwift'
+pod 'Kingfisher', '~> 7.0'
+pod 'Fuzi'
+pod 'SWXMLHash'
+pod 'Reachability'
+
+  # Pods for Video_Downloader_URL
+
+end

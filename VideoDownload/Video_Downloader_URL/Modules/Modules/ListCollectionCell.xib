@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Raleway-Bold.ttf">
+            <string>Raleway-Bold</string>
+        </array>
+        <array key="Raleway-SemiBold.ttf">
+            <string>Raleway-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ListCollectionCell" customModule="Traveldy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="234"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="200" height="234"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5UO-dG-NtB">
+                        <rect key="frame" x="0.0" y="0.0" width="200" height="234"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_dalat" translatesAutoresizingMaskIntoConstraints="NO" id="0jS-Pu-URG">
+                                <rect key="frame" x="0.0" y="0.0" width="200" height="234"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dHX-ay-e3q">
+                                <rect key="frame" x="10" y="184" width="180" height="21"/>
+                                <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PxP-4n-MF9">
+                                <rect key="frame" x="10" y="205" width="180" height="19"/>
+                                <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="PxP-4n-MF9" firstAttribute="top" secondItem="dHX-ay-e3q" secondAttribute="bottom" id="1kr-AB-jUs"/>
+                            <constraint firstItem="PxP-4n-MF9" firstAttribute="leading" secondItem="5UO-dG-NtB" secondAttribute="leading" constant="10" id="4Rr-6v-PMf"/>
+                            <constraint firstItem="0jS-Pu-URG" firstAttribute="top" secondItem="5UO-dG-NtB" secondAttribute="top" id="8sb-I2-XKg"/>
+                            <constraint firstAttribute="bottom" secondItem="PxP-4n-MF9" secondAttribute="bottom" constant="10" id="JVi-ud-7Qb"/>
+                            <constraint firstAttribute="trailing" secondItem="0jS-Pu-URG" secondAttribute="trailing" id="LYH-Ja-vhC"/>
+                            <constraint firstAttribute="bottom" secondItem="0jS-Pu-URG" secondAttribute="bottom" id="NBZ-iH-CzU"/>
+                            <constraint firstItem="dHX-ay-e3q" firstAttribute="leading" secondItem="5UO-dG-NtB" secondAttribute="leading" constant="10" id="b4W-b5-eyL"/>
+                            <constraint firstAttribute="trailing" secondItem="dHX-ay-e3q" secondAttribute="trailing" constant="10" id="c5d-Lq-fvx"/>
+                            <constraint firstItem="0jS-Pu-URG" firstAttribute="leading" secondItem="5UO-dG-NtB" secondAttribute="leading" id="lPj-68-GGt"/>
+                            <constraint firstAttribute="trailing" secondItem="PxP-4n-MF9" secondAttribute="trailing" constant="10" id="w4y-9M-JR4"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="5UO-dG-NtB" secondAttribute="bottom" id="B5w-7d-lf3"/>
+                <constraint firstItem="5UO-dG-NtB" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="CrQ-qt-hQd"/>
+                <constraint firstAttribute="trailing" secondItem="5UO-dG-NtB" secondAttribute="trailing" id="QoE-gM-SKb"/>
+                <constraint firstItem="5UO-dG-NtB" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="qPL-5n-dms"/>
+            </constraints>
+            <size key="customSize" width="200" height="234"/>
+            <connections>
+                <outlet property="imgLocation" destination="0jS-Pu-URG" id="5vF-oR-civ"/>
+                <outlet property="lbLocation" destination="PxP-4n-MF9" id="b16-Yr-FKg"/>
+                <outlet property="lbName" destination="dHX-ay-e3q" id="1kq-dm-Bmm"/>
+                <outlet property="viewCell" destination="5UO-dG-NtB" id="4a7-cG-3kR"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="153.34821428571428"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ic_dalat" width="187.5" height="110"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
